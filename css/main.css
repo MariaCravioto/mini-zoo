@@ -1,0 +1,35 @@
+/*
+*adding style to the title
+*/
+h1{
+color: #0000CD;
+font-family: 'Shojumaru', cursive;
+}
+
+/*
+*giving location to the general container of the images
+*/
+#container{
+  display: inline-block;
+  margin: 50px 150px;
+}
+
+/*
+*adding style to the menu
+*/
+#select{
+  background-color: #48D1CC;
+  color: #FFFFFF;
+  height: 30px;
+  margin-left: 590px;
+}
+
+/*
+*specifying measurements to the images
+*/
+.image{
+  float: left;
+  height: 300px;
+  margin: 20px;
+  width: 300px;
+}
