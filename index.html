@@ -2,32 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>mini-zoo</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Ejercicios</title>
+    <link rel='stylesheet' href='css/main.css'/>
     <link href="https://fonts.googleapis.com/css?family=Shojumaru"
     rel="stylesheet">
   </head>
-
-  <body>
-   <h1><center>MINI ZOO</center></h1>
-   <!-- using the <select> and <option> tags
+  <h1><center>MINI ZOO</center></h1>
+  <!-- using the <select> and <option> tags
    we use to create a list of options type menu -->
-   <select id="select" name="filters">
-     <option value="">selecciona una opcion</option>
-     <option value="original">original</option>
-     <option value="sepia">sepia</option>
-     <option value="withe-black">blanco y negro</option>
-     <option value="negative-colors">invertir colores</option>
-   </select>
-  <!-- adding the images -->
-   <div id="container">
-   <img src="assets/images/colibri.jpg" alt="colibri" class="image">
-   <img src="assets/images/lemur.jpg" alt="lemur" class="image">
-   <img src="assets/images/panda.jpg" alt="panda" class="image">
-   <img src="assets/images/perritos.jpg" alt="perritos" class="image">
-   <img src="assets/images/pinguinos.jpg" alt="pinguinos" class="image">
-   <img src="assets/images/puercospin.jpg" alt="puercospin" class="image">
-   </div>
+  <body onload="crearContenedor()">
+    <div>
+      <select id='select'>
+        <option value='' data-filter="original">Original</option>
+        <option value='' data-filter="black-white">Blanco y negro</option>
+        <option value='' data-filter="sepia">Sepia</option>
+        <option value='' data-filter="negative">Invertir colores</option>
+      </select>
+    </div>
+
+   <!-- adding images -->
+    <div class="image">
+      <img src="assets/images/colibri.jpg" alt="colibri" width="300" height="300">
+      <img src="assets/images/lemur.jpg" alt="lemur" width="300" height="300">
+      <img src="assets/images/panda.jpg" alt="panda" width="300" height="300">
+      <img src="assets/images/perritos.jpg" alt="perritos" width="300" height="300">
+      <img src="assets/images/pinguinos.jpg" alt="pinguinos" width="300" height="300">
+      <img src="assets/images/puercospin.jpg" alt="puercospin" width="300" height="300">
+    </div>
 
     <script src="js/app.js"></script>
   </body>

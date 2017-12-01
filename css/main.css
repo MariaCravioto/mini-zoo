@@ -6,30 +6,45 @@ color: #0000CD;
 font-family: 'Shojumaru', cursive;
 }
 
-/*
-*giving location to the general container of the images
-*/
-#container{
-  display: inline-block;
-  margin: 50px 150px;
+
+img{
+  margin: 20px;
 }
 
 /*
-*adding style to the menu
+*adding style to the buttom select
 */
 #select{
   background-color: #48D1CC;
   color: #FFFFFF;
   height: 30px;
-  margin-left: 590px;
+  margin-left: 600px;
 }
 
 /*
 *specifying measurements to the images
 */
 .image{
-  float: left;
-  height: 300px;
-  margin: 20px;
-  width: 300px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+/*
+*adding the filters
+*/
+.black-white{
+  filter: grayscale(100%);
+}
+
+.negative {
+  filter: invert(100%);
+}
+
+.original {
+  filter: none;
+}
+
+.sepia {
+  filter: sepia(100%);
 }
