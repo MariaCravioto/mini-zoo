@@ -6,7 +6,6 @@ color: #0000CD;
 font-family: 'Shojumaru', cursive;
 }
 
-
 img{
   margin: 20px;
 }
@@ -25,9 +24,9 @@ img{
 *specifying measurements to the images
 */
 .image{
+  display: inline-block;
   margin: 10px;
   text-align: center;
-  display: inline-block;
 }
 
 /*
