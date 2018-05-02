@@ -1,7 +1,7 @@
 # MINI ZOO
        
  **Notas generales**
- - Crear un filtro de imagenes
+ - Crear opciones de filtros para imagenes
  
  ![normal](https://image.ibb.co/naDyES/screencapture_mariacravioto_github_io_mini_zoo_2018_05_02_00_46_05.png)
  
@@ -26,9 +26,7 @@
                      margin-left: 600px;
                      }
 
-  - Crea las clases que se agregarán a las imágenes
-     para que cambien según la opción
-     Para esto se usará la propiedad de css
+  - Crea las clases que se agregarán a las imágenes para que cambien según la opción. Para esto se usará la propiedad de css
 
                     °filter
 
@@ -50,14 +48,13 @@
 
 - Llamamos a todos los elementos que tienen la clase asignada a las imágenes
 
-     var image= document.getElementsByClassName('image');
+       var image = document.getElementsByClassName('image');
 
 y luego agregue la clase que agregará los estilos de filtro.
 
 - Gracias al elemento onchange puedes saber cuándo ha sido seleccionada una opción
-   seleccionado
 
-   document.getElementById("select").addEventListener("change", changeFilter);
+       document.getElementById("select").addEventListener("change", changeFilter);
 
 -  Creamos un else si para asignar una función para ejecutar,
 de acuerdo con la elección del usuario, a través de las opciones dadas en la selección
