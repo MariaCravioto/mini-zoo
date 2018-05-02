@@ -1,16 +1,23 @@
-       =MINI ZOO=
+# MINI ZOO
+       
+ **Notas generales**
+ - Crear un filtro de imagenes
+ 
+ ![normal](https://image.ibb.co/naDyES/screencapture_mariacravioto_github_io_mini_zoo_2018_05_02_00_46_05.png)
+ 
+ ![filtro](https://image.ibb.co/cPzMZS/screencapture_mariacravioto_github_io_mini_zoo_2018_05_02_00_46_50.png)
 
 
-  *Assemble the html structure*   
-  - We create the options menu  
+  **Ensamblar la estructura html**   
+  - Creamos el menú de opciones
 
                  <select> & <option>
 
-  - We add the images
+  - Agregamos las imágenes
 
 
-  *create the css file*
-  - Give style, size and location to the elements created in html  
+  **crea el archivo css**
+  - Da estilo, tamaño y ubicación a los elementos creados en html 
 
                      #select{
                      background-color: #48D1CC;
@@ -19,9 +26,9 @@
                      margin-left: 600px;
                      }
 
-  - Create the classes that will be added to the images
-    so that they change according to the option
-    For this the property of css will be used
+  - Crea las clases que se agregarán a las imágenes
+     para que cambien según la opción
+     Para esto se usará la propiedad de css
 
                     °filter
 
@@ -39,21 +46,21 @@
 
 
 
- *Create the java script file*
+ **Crea el archivo javascript**
 
-- We call all the elements that have the class assigned to the images
+- Llamamos a todos los elementos que tienen la clase asignada a las imágenes
 
      var image= document.getElementsByClassName('image');
 
-and then add the class that will add the filter styles.
+y luego agregue la clase que agregará los estilos de filtro.
 
-- Thanks to the onchange element you can know when a select option has been
-  selected
+- Gracias al elemento onchange puedes saber cuándo ha sido seleccionada una opción
+   seleccionado
 
    document.getElementById("select").addEventListener("change", changeFilter);
 
--  We create an else if to assign a function to execute,
-according to the user's choice, through the options given in the select
+-  Creamos un else si para asignar una función para ejecutar,
+de acuerdo con la elección del usuario, a través de las opciones dadas en la selección
 
               if (filterToApply == "negative") {
                  switchToNegative();
